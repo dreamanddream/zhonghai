@@ -1,0 +1,144 @@
+.gaoguan_neirong {
+    padding-top: 161px;
+}
+.gaoguan_neirong .leader_logo{
+   /* width:90%;*/
+    position:relative;
+}
+.gaoguan_neirong .leader_logo img{
+    width:100%;
+}
+.leader_logo .user_information{
+    position:absolute;
+    left:10px;
+    top:5px;
+}
+.leader_logo .user_information .family{
+    font-size:28px;
+    color:#fffff8;
+}
+.leader_logo .user_information .family_information{
+    font-size:20px;
+    color:#fffff8;
+    margin-top:8px;
+}
+.leader_logo .family_information span{
+    margin-right:10px;
+
+}
+.item{
+   /* width: 90%;*/
+    text-align: center;
+    margin:70px 0 100px;
+}
+.item .work_type{
+    float:left;
+   border:5px solid #cbcbcb;
+    width:94px;
+    height: 94px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background:#6f6f6f;
+    text-align: center;
+    line-height: 94px;
+    margin-right:5%;
+}
+.item .work_type:first-child{
+    margin-left:15%;
+}
+.item .work_type p{
+    color:#fff;
+    font-size:18px;
+}
+.gaoguan_neirong .item .greenyellow{
+    background:#90be20;
+   /* border:5px solid #ceef7e;*/
+}
+
+/*时间列表*/
+.time_total{
+    width:90%;
+}
+.time_total .green{
+    width:20px;
+    height: 20px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background:#bfe389;
+    display: inline-block;
+    line-height: 20px;
+    margin-top:4px;
+}
+.time_total .white{
+   /* vertical-align: middle;*/
+    text-align: center;
+    width:28px;
+    height: 28px;
+   /* background: red;*/
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    border:2px solid #f28b0f;
+}
+.time_total .time_list {
+    margin-left:8px;
+}
+.time_total .time_list .time_menu{
+    float:left;
+}
+.time_total .time_list .time_menu p{
+    float:left;
+    margin-right:13px;
+}
+.time_total .time_list .date,.time_total .time_list .day {
+    font-size:28px;
+}
+.time_total .time_list .job_type{
+    background:#90be20;
+    color:#fff;
+    font-size:18px;
+    float:right;
+    text-align:right;
+    width:90px;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+
+}
+.time_total .time_list .job_type p{
+   padding:2px 0px 2px 8px;
+}
+.time_total .time_list .work_status{
+    margin:31px 0 31px;
+    font-size:20px;
+    color:#666;
+}
+
+
+
+
+/*媒体查询*/
+
+@media only screen and (max-width:1440px){
+    .leader_logo .user_information .family{
+        font-size:24px;
+        color:#fffff8;
+    }
+    .leader_logo .user_information .family_information{
+        font-size:16px;
+        color:#fffff8;
+        margin-top:6px;
+    }
+}
+@media only screen and (max-width:1280px){
+    .leader_logo .user_information .family{
+        font-size:22px;
+        color:#fffff8;
+    }
+    .leader_logo .user_information .family_information{
+        font-size:14px;
+        color:#fffff8;
+        margin-top:6px;
+    }
+}

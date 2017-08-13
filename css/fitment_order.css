@@ -1,0 +1,136 @@
+/*装修预约标题*/
+.order_title{
+    /*width:90%;*/
+    background: #ececec;
+    padding-top: 160px;
+}
+.order_title p{
+    font-size:40px;
+    color:#5a5a5a;
+    padding:18px 0 13px 18px;
+}
+.order_line{
+    background:#23211c;
+    height:4px;
+}
+/*预约内容*/
+.order_content{
+    position:relative;
+    /*width:90%;*/
+}
+.order_content .order_img{
+    width:100%;
+}
+.order{
+    width:414px;
+    background: #fff;
+    text-align:center;
+    position:absolute;
+    top:68px;
+    right:123px;
+}
+.order .orderTitle .title_first{
+    padding-top: 34px;
+    font-size:20px;
+    color:#e22b2b;
+}
+.order .orderTitle .title_two{
+  font-size:16px;
+    color:#333;
+    margin:15px 0 20px;
+}
+.order form .name,.order form .tel,.order form .houses_name,.order form .houses_area{
+    border:1px solid #999;
+   /* width:45%;*/
+    width: 362px;
+    margin:0 auto;
+    height:36px;
+    line-height:36px;
+    font-size:18px;
+    color:#999;
+}
+.order form  .name .name_first,.order form  .tel .tel_first,.order form .houses_first,.order form .area_first{
+    float:left;
+}
+.order form .name .name_two,.order form .tel .tel_two,.order form .houses_two,.order form .area_two{
+    float:left;
+
+}
+.order form  input{
+    height:23px;
+    font-size:16px;
+    outline:none;
+    border:none;
+}
+.order form .name_error,.order form .tel_error,.order form .houses_error,.order form .area_error{
+    margin: 3px auto 7px;
+    color:#e22b2b;
+    visibility: hidden;
+}
+.order form .button{
+    width:362px;
+    height:44px;
+    line-height:44px;
+    background:#6374a1;
+    margin:0 auto;
+    color:#fff;
+    font-size:16px;
+}
+.order_content .fitOrder{
+    margin-top:17px;
+    font-size:18px;
+    padding-bottom:35px;
+}
+.order_content .fitOrder .fitOrderTel{
+    font-weight: bold;
+}
+
+/*媒体查询*/
+/*form表单大小调整*/
+@media only screen and (max-width:1680px){
+    .order form .name, .order form .tel, .order form .houses_name, .order form .houses_area {
+        border: 1px solid #999;
+        width: 268px;
+        margin: 0 auto;
+        height: 36px;
+        line-height: 36px;
+        font-size:14px;
+    }
+    .order .orderTitle .title_first {
+        padding-top: 16px;
+    }
+    .order form .button {
+       /* width: 362px;*/
+        width: 268px;
+        height: 36px;
+        line-height: 36px;
+        background: #6374a1;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 16px;
+    }
+    .order_content .fitOrder {
+        margin-top: 11px;
+        font-size: 18px;
+        padding-bottom: 22px;
+    }
+    .order .orderTitle .title_two {
+        font-size: 14px;
+        color: #333;
+        margin: 9px 0 10px;
+    }
+    .order {
+        width: 414px;
+        background: #fff;
+        text-align: center;
+        position: absolute;
+        top: 29px;
+        right: 74px;
+    }
+    .order form input {
+        height: 22px;
+        font-size: 12px;
+
+    }
+}
+

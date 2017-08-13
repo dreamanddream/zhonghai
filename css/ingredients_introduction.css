@@ -1,0 +1,99 @@
+.ingredients_title{
+/*    width:90%;*/
+    background: #ececec;
+    padding-top: 160px;
+}
+.ingredients_title p{
+    font-size:40px;
+    color:#5a5a5a;
+    padding:18px 0 13px 18px;
+}
+.ingredients_line{
+    background:#23211c;
+    height:4px;
+}
+.ingredients_content{
+    margin-top:18px;
+  /*  width:89%;*/
+    width:98%;
+    margin-left:1%;
+}
+.ingredients_list{
+    border:solid 1px #cccccc;
+    min-height:330px;
+}
+.ingredients_content .ingredients_wrap{
+    margin-left:5%;
+    margin-top:40px;
+}
+.ingredients_wrap .ingredients_images{
+    float:left;
+    margin-right:3%;
+    width:30%;
+}
+.ingredients_wrap .ingredients_images img{
+    width:100%;
+}
+.ingredients_wrap .ingredients_right{
+    float:left;
+    width:60%;
+}
+.ingredients_number{
+    width: 77px;
+    height: 68px;
+    background:#6c6c6c;
+    font-size:36px;
+    color:#fff;
+    text-align:center;
+    line-height:68px;
+    float:left;
+}
+.ingredientsDescription{
+    margin-left:100px;
+   /* float:left;*/
+}
+.ingredientsDescription .font_title{
+    font-size:34px;
+    color:#5a5a5a;
+    margin-bottom:32px;
+}
+.ingredientsDescription  .font{
+    font-size:22px;
+    color:#646e78;
+    margin-bottom:22px;
+    position:relative;
+}
+.ingredientsDescription .font p:last-child{
+    margin-left:15px;
+}
+.ingredientsDescription .font p:first-child{
+    width:10px;
+    height: 10px;
+    background:#fe9a0d;
+    left: -11px;
+    top: 11px;
+    position:absolute;
+}
+/*调整字体大小*/
+@media only screen and (min-width: 1600px) and (max-width:1680px){
+    .ingredients_wrap .ingredients_images {
+        float: left;
+        margin-right: 3%;
+        width: 28%;
+    }
+}
+@media only screen and (min-width: 1441px) adn (max-width:1599px){
+    .ingredients_wrap .ingredients_images {
+        float: left;
+        margin-right: 3%;
+        width: 25%;
+    }
+}
+@media only screen and (max-width:1440px){
+    .ingredientsDescription .font_title {
+        font-size: 28px;
+    }
+    .ingredientsDescription .font {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,98 @@
+
+.guide_content{
+    padding-top: 161px;
+}
+.guide_content .guide{
+    border-bottom: 1px dashed #999;
+    padding-bottom: 27px;
+}
+/*各个栏目标题*/
+.guide_content .guide_title{
+    margin-left:1%;
+    padding-top: 30px;
+    border-bottom:2px solid #ececec;
+   /* border-bottom:1px solid red;*/
+   /* height:50px;*/
+    position: relative;
+}
+
+.guide_content .guide_title .font_title{
+    font-size: 40px;
+    color:#5a5a5a;
+    padding-bottom:10px;
+    margin-left:29px;
+}
+.guide_content .guide_title .guide_more{
+    float:right;
+    font-size:18px;
+    color:#a9a9a8;
+    margin-top:26px;
+    margin-right:1%;
+}
+.guide_title .guide_line{
+    border-bottom:2px solid #1d1d1d;
+    width:121px;
+    height:1px;
+    position:absolute;
+    left:0;
+    bottom: 0;
+}
+/*各个栏目下的内容*/
+
+.guide_list{
+    margin-top:15px;
+}
+.guide_list .front {
+    width: 31.33%;
+    float: left;
+    /* margin-right: 2%; */
+    margin: 1%;
+    /* cursor: pointer; */
+}
+.guide_list .front:last-child{
+   margin-right:0;
+}
+.guide_list .front img{
+    width:100%;
+}
+.guide_list .front_font .front_title{
+    font-size:20px;
+    color:#999;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom:16px;
+    display:block;
+
+}
+.guide_list .front_font .front_introduction{
+    color:#999;
+    font-size:16px;
+    line-height:30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: box;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    height:85px;
+
+   /* padding-right:15px;*/
+}
+.guide_list .front_font .xiangqing{
+    color:#ff397d;
+    /*float:right;*/
+    font-size:16px;
+}
+/*媒体查询*/
+@media only screen and (min-width:1600px) {
+    .guide_list .front {
+        width: 23%;
+        float: left;
+        /* margin-right: 2%; */
+        margin: 1%;
+        /* cursor: pointer; */
+    }
+}

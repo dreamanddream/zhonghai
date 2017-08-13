@@ -1,0 +1,102 @@
+/*建议图片*/
+ .suggest_images{
+   /* width:85%;*/
+     padding-top: 161px;
+}
+.suggest_images img{
+width:100%;
+}
+/*建议内容*/
+.suggest_content{
+    text-align:center;
+}
+.suggest_content .suggest_title{
+    font-size: 60px;
+    color:#676a58;
+    margin-bottom:60px;
+}
+.suggest_content  .text{
+    outline:none;
+    width:60%;
+   /* height:60%;*/
+    height:300px;
+    border:2px solid #4d4d4d;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+    resize:none;
+    font-size:42px;
+    color:#676a58;
+}
+.suggest_content .footer{
+    width:100%;
+    background:#fffcf4;
+    padding-top:66px;
+    padding-bottom: 300px;
+}
+.suggest_content .name,.suggest_content .tel{
+    height:60px;
+    line-height:60px;
+    width:40%;
+    vertical-align: middle;
+    margin:0 auto 3px;
+    border:1px solid #999;
+    background:#fff;
+}
+.suggest_content .name p:first-child,.suggest_content .tel p:first-child{
+    font-size:30px;
+    text-align:left;
+    color:#999;
+    float:left;
+}
+.suggest_content .name .inp,.suggest_content .tel .inp{
+    float:left;
+}
+.suggest_content .name input,.suggest_content .tel input{
+    height:30px;
+    outline:none;
+    border:none;
+    font-size:20px;
+    color:#999;
+}
+.suggest_content .footer .name_error{
+    color:#ab202d;
+    margin-bottom:27px;
+}
+.suggest_content .footer .tel_error{
+    color:#ab202d;
+    margin-bottom:27px;
+}
+.suggest_content .button{
+    background:#e2293b;
+    width:60%;
+    margin:0 auto;
+}
+.suggest_content .button p{
+    padding: 5px 0;
+    text-align: center;
+    font-size:50px;
+    color:#fff;
+    letter-spacing: 20px;
+
+}
+/*媒体查询*/
+/*设置字体变小*/
+@media only screen and (max-width:1559px){
+    .suggest_content .name p:first-child,.suggest_content .tel p:first-child{
+        font-size:16px;
+    }
+    .suggest_content .name input,.suggest_content .tel input{
+        font-size:20px;
+    }
+}
+@media only screen  and (max-width:1440px){
+    .suggest_content .suggest_title{
+        font-size: 50px;
+    }
+    .suggest_content  .text{
+        font-size:36px;
+    }
+}
+
+

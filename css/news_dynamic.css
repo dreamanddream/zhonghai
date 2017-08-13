@@ -1,0 +1,95 @@
+/*新闻标题*/
+.news_title{
+   /* width:90%;*/
+    background: #ececec;
+    padding-top: 160px;
+}
+.news_title p{
+    font-size:40px;
+    color:#5a5a5a;
+    padding:18px 0 13px 18px;
+}
+.news_line{
+    background:#23211c;
+    height:4px;
+}
+/*新闻内容*/
+.news_content {
+    margin-top: 18px;
+    width: 89%;
+    margin-left: 6%;
+}
+.news_list{
+    width:90%;
+    margin-bottom:50px;
+    position: relative;
+}
+.news_wrap{
+    margin-left:5%;
+}
+/*.news_images{
+    float:left;
+    margin-right:3%;
+    width:35%;
+}*/
+.news_images {
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+}
+.news_images img{
+    width:100%;
+}
+.font_content{
+    float:left;
+    width:60%;
+}
+.font_content .font_title{
+    display: block;
+    font-size: 22px;
+    color:#383434;
+    margin-bottom:30px;
+}
+.font_content .xiangqing{
+    font-size:16px;
+   /* min-height:190px;*/
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+   /* width:90%;*/
+}
+.font_content .more{
+    float:right;
+    margin-left:15px;
+    font-size:14px;
+    color:#666;
+    cursor: pointer;
+}
+.font_title .xiangqing .neirong{
+    color:#666;
+}
+.font_content .date{
+   /* margin-bottom:5%;*/
+    position: absolute;
+    bottom:10px;
+}
+.font_content  .date .dateFont{
+    color:#666;
+}
+.font_content .dateTime{
+    color:#ff4047;
+}
+/*媒体查询*/
+@media only screen  and (max-width:1440px){
+    .font_content .xiangqing{
+      /*  min-height:170px;*/
+    }
+}
+@media only screen and (max-width:1366px){
+    .font_content .xiangqing{
+        /*min-height:160px;*/
+    }
+    .font_content .date{
+        margin-bottom:0;
+    }
+}

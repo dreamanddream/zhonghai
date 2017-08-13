@@ -1,0 +1,77 @@
+/*人才招聘标题*/
+.recruit_title{
+   /* width:90%;*/
+    background: #ececec;
+    padding-top:160px;
+}
+.recruit_title p{
+    font-size:40px;
+    color:#5a5a5a;
+    padding:18px 0 13px 18px;
+}
+.recruit_line{
+    background:#23211c;
+    height:4px;
+}
+/*地域搜索*/
+.select_type{
+    height:70px;
+    background: #57a7c4;
+    margin-top:20px;
+    line-height:70px;
+    padding-left:40px;
+}
+.select_type .area{
+    font-size:26px;
+    color:#fff;
+    float:left;
+}
+.select_type .select .select_con{
+    margin-left:16px;
+    width:288px;
+    height:46px;
+    float:left;
+    border:none;
+    margin-top:12px;
+    font-size:20px;
+    color:#57a7c4;
+    outline:none;
+}
+.select_type .select .select_con option{
+    outline:none;
+    border:0;
+
+}
+/*表格内容*/
+.tab table{
+    border-collapse:collapse;
+    width:100%;
+    margin-top:20px;
+    border:1px solid #e5e5e5;
+}
+
+.tab tr th{
+    background: #387ca1;
+   /* font-size:24px;*/
+    font-size:20px;
+    color:#fff;
+}
+.tab tr{
+    height: 58px;
+}
+.tab tr th:first-child{
+    width:25%;
+}
+.tab tr th:nth-child(2){
+    width:30%;
+}
+.tab tr th:last-child(3){
+    width:40%;
+}
+.tab .tab_list{
+    text-align: center;
+    /*font-size:22px;*/
+    font-size:18px;
+    color:#5a5a5a;
+}
+

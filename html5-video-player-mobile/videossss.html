@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<title>超炫酷的HTML5视频播放器DEMO演示</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/willesPlay.css"/>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/willesPlay.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		.container_lun {
+			margin: 20px auto;
+			width: 510px;
+			overflow: hidden;
+			position: relative;
+			display:none;
+		}
+		.inner {
+			position: relative;
+			/* width: 9999px;*/
+			width:8100px;
+			left: 0;
+			top: 0;
+		}
+		.innerwraper {
+			float: left;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+		.clearfix:after {
+			display: block;
+			clear: both;
+			visibility: hidden;
+			content: "";
+			height: 0;
+		}
+		a {
+			text-decoration: none;
+		}
+		.left-arrow {
+			position: absolute;
+			left: 0;
+			top: 40%;
+			width: 10%;
+			height: 20px;
+			text-align: center;
+			line-height: 20px;
+			font-size: 20px;
+		}
+		.right-arrow {
+			position: absolute;
+			right: 0;
+			top: 40%;
+			width: 10%;
+			height: 20px;
+			font-size: 20px;
+			text-align: center;
+			line-height: 20px;
+		}
+		.pagination{
+			position: absolute;
+			bottom: 10px;
+			width: 100%;
+			text-align: center;
+		}
+		.pagination span{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			background-color: yellow;
+			line-height: 30px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.pagination .active{
+			background-color: red;
+			color: #FFFFFF;
+		}
+	</style>
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="willesPlay">
+
+	<div class="playContent" style="height:500px;">
+		<div class="container_lun">
+			<div class="inner clearfix">
+				<div class="innerwraper"><img src="../images/quality_five.jpg" alt="" /></div>
+				<div class="innerwraper"><img src="../images/quality_one.jpg" alt="" /></div>
+				<div class="innerwraper"><img src="../images/quality_two.jpg" alt="" /></div>
+				<div class="innerwraper"><img src="../images/quality_three.jpg" alt="" /></div>
+				<div class="innerwraper"><img src="../images/quality_four.jpg" alt="" /></div>
+				<div class="innerwraper"><img src="../images/quality_six.jpg" alt="" /></div>
+				<div class="innerwraper"><img src="../images/quality_seven.jpg"  alt="" /></div>
+				<div class="innerwraper"><img src="../images/quality_eight.jpg"  alt="" /></div>
+				<div class="innerwraper"><img src="../images/quality_nine.jpg" alt="" /></div>
+			</div>
+			<div class="pagination">
+				<span class="active">1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+			</div>
+			<a href="javascript:void(0)" class="left-arrow">&lt;</a>
+			<a href="javascript:void(0)" class="right-arrow">&gt;</a>
+		</div>
+		<!--<div class="turnoff">
+			<ul>
+				<li><a href="javascript:;" title="喜欢" class="glyphicon glyphicon-heart-empty"></a></li>
+				<li><a href="javascript:;" title="关灯" class="btnLight on glyphicon glyphicon-sunglasses"></a></li>
+				<li><a href="javascript:;" title="分享" class="glyphicon glyphicon-share"></a></li>
+			</ul>
+		</div>-->
+
+		<video width="100%" height="100%" id="playVideo" src="../d1.mp4">
+			当前浏览器不支持 video直接播放，点击这里下载视频： <a href="/">下载视频</a>
+		</video>
+
+
+		<div class="playTip glyphicon glyphicon-play"></div>
+	</div>
+	<div class="playControll">
+		<div class="playPause playIcon"></div>
+		<div class="timebar">
+			<span class="currentTime">0:00:00</span>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+				</div>
+			<span class="duration">0:00:00</span>
+		</div>
+		<div class="otherControl">
+			<span class="volume glyphicon glyphicon-volume-down"></span>
+			<span class="fullScreen glyphicon glyphicon-fullscreen"></span>
+			<div class="volumeBar">
+					<div class="volumewrap">
+						<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 8px;height: 40%;"></div>
+					</div>
+						</div>
+				</div>
+		</div>
+	</div>
+</div>
+			
+		</div>
+	</div>
+</div>
+<script>
+    var innerGroup = $(".innerwraper");
+    var leftArrow = $(".left-arrow");
+    var rightArrow = $(".right-arrow");
+    var spanGroup = $(".pagination span");
+    var imgWidth = $(".innerwraper img:first-child").eq(0).width();
+    var _index = 0;
+    var timer = null;
+    var flag = true;
+    rightArrow.on("click", function() {
+        //右箭头
+        flag = false;
+        clearInterval(timer);
+        _index++;
+        selectPic(_index);
+    })
+    leftArrow.on("click", function() {
+        //左箭头
+        flag = false;
+        clearInterval(timer);
+        if (_index == 0) {
+            _index = innerGroup.length - 1;
+            $(".inner").css("left", -(innerGroup.length - 1) * imgWidth);
+        }
+        _index--;
+        selectPic(_index);
+    })
+    spanGroup.on("click", function() {
+        //导航切换
+        _index = spanGroup.index($(this));
+        selectPic(_index);
+    })
+
+    $(".container").hover(function() {
+        //鼠标移入
+        clearInterval(timer);
+        flag = false;
+    }, function() {
+        flag = true;
+        timer = setInterval(go, 3000);
+    });
+
+    function autoGo(bol) {
+        //自动行走
+        if (bol) {
+            timer = setInterval(go, 3000);
+        }
+    }
+    autoGo(flag);
+
+    function go() {
+        //计时器的函数
+        _index++;
+        selectPic(_index);
+    }
+    function selectPic(num) {
+        $(".pagination span").eq(num).addClass("active").siblings().removeClass("active");
+        $(".inner").animate({
+            left: -num * imgWidth,
+        }, 1000, function() {
+            //检查是否到最后一张
+            if (_index == innerGroup.length - 1) {
+                _index %= 8;
+                $(".inner").css("left", "0px");
+                $(".pagination span").eq(0).addClass("active").siblings().removeClass("active");
+            }
+        })
+    }
+</script>
+</body>
+</html>

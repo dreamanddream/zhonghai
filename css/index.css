@@ -1,0 +1,318 @@
+html{
+    height:100%;
+}
+body{
+   height:100%;
+}
+.w{
+    width:1320px;
+    margin:0 auto;
+}
+/*底部导航*/
+ nav{
+    margin-top:11px;
+  /*   margin-top:1%;
+     height:12%;*/
+}
+  nav ul li{
+    float:left;
+    width:163px;
+    text-align:center;
+    height:44px;
+    line-height: 44px;
+    border-right:1px solid #e3e3e3;
+}
+ nav ul .mengceng{
+    background:#6a6a6a;
+    -webkit-box-shadow:-6px 6px 6px #888;
+    -moz-box-shadow:-6px 6px 6px #888;
+    box-shadow:-6px 6px 6px #888;
+}
+ nav ul li a{
+    font-size:22px;
+}
+ nav ul .mengceng a{
+    color:#fff;
+}
+nav ul .line_none{
+    border-right:none;
+}
+nav ul .line_border{
+    border-bottom: 1px solid #959595;
+}
+ nav ul{
+    /*border-bottom:1px solid #959595;*/
+    background:#fff;
+   /* margin-bottom:57px;*/
+     margin-bottom:13px;
+}
+
+body{
+    position:relative;
+}
+
+/*设置video*/
+/*.content{
+    height:80%;
+}
+.m{
+    height:10%;
+}*/
+.dingwei{
+    position:relative;
+}
+
+.dingwei_img .img{
+    width:100%;
+  /*  height:auto;*/
+}
+.m{ margin-left: auto; margin-right: auto;}
+.dingwei{
+    background:url("../images/dahai.jpg");
+}
+#videoBox {
+    transition: 0.5s;
+}
+#videoBox.out{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height:250px;
+    z-index: 999;
+    animation: an 0.5s;
+}
+.wh{
+    width:300px;
+    height:300px;
+}
+#video1{
+    width:100%;
+}
+@media only screen and (min-width:1500px) {
+   .m{
+       width: 1300px;
+   }
+    /*.m{
+        width:1200px;
+    }*/
+}
+@media only screen and (max-width:1680px) {
+  /*  .login {
+        position: absolute;
+        right: 167px;
+        top: 40px;
+    }*/
+}
+@media only screen and (max-width:1500px) {
+   header .top,.nav_inner{
+        width:90%;
+        margin:0 auto;
+    }
+    .dingwei{
+        width:100%;
+    }
+    .m{
+        height:100%;
+        width:90%;
+    }
+   /* header .logo {
+        float: left;
+        margin-left: 21px;
+    }
+    .title p:first-child {
+        font-size: 30px;
+        color: #000;
+        font-weight: bold;
+    }
+    .title p:last-child, .addre p {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .title {
+        margin-left: 16px;
+        margin-right: 20px;
+    }
+    .login {
+        position: absolute;
+        right:15%;
+        top: 35px;
+    }
+    .addre p:last-child {
+        margin-top: 16px;
+        margin-left: 48px;
+    }*/
+    nav ul li{
+        text-align:center;
+    }
+    .addre_tel p:last-child{
+        margin-top:15px;
+    }
+    .dingwei_img {
+        position:relative;
+        top: 0;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1460px) {
+   nav ul li{
+       width:155px;
+
+    }
+    .title {
+        margin-right: 144px;
+    }
+    header .logo{
+        margin-left:119px;
+    }
+    .login{
+        right:87px;
+    }
+}
+@media only screen and (max-width:1366px) {
+ nav ul li {
+        width:150px;
+    }
+    .title {
+        margin-right: 118px;
+    }
+    header .logo{
+        margin-left:119px;
+    }
+    .login{
+        right:87px;
+    }
+}
+@media only screen and (max-width:1300px) {
+    nav ul li{
+        width:134px;
+    }
+}
+@media only screen and (max-width:1024px){
+
+    header .img{
+        margin-right:10px;
+    }
+    .addre{
+        margin-right:12px;
+    }
+    .top .title p:first-child{
+        font-size:28px;
+    }
+    .login{
+        right:7%;
+    }
+    nav ul li{
+        width:113px;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+
+    header .logo {
+        float: left;
+        margin-left: 21px;
+    }
+    .title p:first-child {
+        font-size: 30px;
+        color: #000;
+        font-weight: bold;
+    }
+    .title p:last-child, .addre p {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .title {
+        margin-left: 16px;
+        margin-right: 20px;
+    }
+    .login {
+        position: absolute;
+        right:7%;
+        top: 35px;
+    }
+    .addre p:last-child {
+        margin-top: 16px;
+        margin-left: 48px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .address{
+        position:fixed;
+        bottom:0;
+        background:#fff;
+        width:90%;
+    }
+    nav ul li{
+        width:84px;
+    }
+    nav ul li a{
+        font-size:18px;
+    }
+}
+@media only screen and (max-width:700px){
+    nav ul li{
+        width:30%;
+    }
+    header .logo {
+        margin-left: 15px;
+    }
+    .top .title{
+        margin-top: 10px;
+    }
+    .top .title p:first-child{
+        font-size:22px;
+    }
+    .top .title p:last-child{
+        font-size:14px;
+    }
+}
+@media only screen and (max-width:414px) {
+    .addre {
+        margin-bottom: 10px;
+    }
+    .top .addre{
+        width:90%;
+    }
+}
+@media only screen and (max-width:375px){
+    nav ul li a{
+        font-size:16px;
+    }
+    header{
+        height:70px;
+    }
+    .logo{
+        width:50px;
+        margin-top:10px;
+    }
+    .logo img{
+        width:100%;
+    }
+    .title{
+        margin-left:10px;
+    }
+    .login{
+        margin-top:-10px;
+    }
+}
+@media only screen and (max-width:320px) {
+  .addre p {
+        font-size: 14px;
+    }
+  .addre_tel p{
+      font-size: 14px;
+  }
+  .title{
+      margin-left:4px;
+  }
+  .title p:first-child{
+      font-size:20px;
+  }
+  .title p:last-child{
+      font-size:12px;
+  }
+  .login{
+      margin-top:-20px;
+  }
+}

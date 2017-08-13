@@ -1,0 +1,316 @@
+*{margin:0;padding:0}
+body{
+    font-size:12px;
+    font-family:"Microsoft YaHei";
+    width:100%;
+    height:100%;
+}
+html{width:100%;height:auto;font-family:"Microsoft YaHei";}
+
+/*body{
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYiMicro Hei",sans-serif;
+}*/
+ul,ol{list-style:none}
+img{border:0}
+a{text-decoration:none;outline: none;color:#454545;}
+i{font-style:normal}
+u{text-decoration:none}
+.clear{clear:both}
+.img-responsive{display:block;max-width:100%;height:auto}
+.fl{float:left}
+.fr{float:right}
+.clearfix:before,.clearfix:after{
+    content:"";
+    height:0;
+    clear:both;
+    display: block;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}
+.clear{
+    clear: both;
+}
+/*公共类*/
+.wt{
+    width:1420px;
+    margin:0 auto;
+}
+/*所有网站头部*/
+header{
+    position: fixed;
+    /* background: red; */
+    /* height: 10%; */
+    height: 81px;
+    padding-bottom: 10px;
+    z-index: 10000;
+    background: #fff;
+    width: 100%;
+}
+header .top{
+    width:1348px;
+   /* height:81px;*/
+    margin-bottom:10px;
+}
+header .logo{
+    float: left;
+    margin-left:38px;
+    margin-top:5px;
+}
+.header .title{
+    float: left;
+}
+.title{
+    margin-left:16px;
+    margin-right:345px;
+}
+.title p:first-child{
+    font-size:38px;
+    color:#000;
+    font-weight: bold;
+}
+.title p:last-child,.addre p{
+    font-size:18px;
+    font-weight: bold;
+}
+.address{
+    margin-top:16px;
+}
+.addre{
+    margin-right:27px;
+}
+.addre p:last-child{
+    margin-top:16px;
+    margin-left:53px;
+}
+header .img{
+    margin-right:21px;
+}
+.addre_tel{
+    font-size:20px;
+    font-weight:bold;
+
+}
+.addre_tel p:last-child{
+    margin-top:13px;
+}
+.addre_tel .addTel{
+    margin-bottom:14px;
+}
+.addre .addTwo{
+    margin-left:47px;
+}
+.login{
+    position:absolute;
+    right:225px;
+    top:40px;
+}
+
+/*左侧栏目和头部*/
+.content{
+    width:100%;
+    padding-top:91px;
+}
+/*左侧栏目*/
+.left_list{
+    float:left;
+    width:15%;
+    background:#494949;
+    text-align:center;
+    position: fixed;
+    height:100%;
+}
+.left_list .left_inner{
+    position:relative;
+}
+.design_title{
+   /* padding-top:102px;*/
+    padding-top:25%;
+    margin-bottom:60px;
+}
+.design_title .zhjl{
+    font-size:54px;
+    text-shadow: 2px 2px 0 #fff,-2px 2px 0 #fff,2px -2px 0 #fff,-2px -2px 0 #fff;
+    color:#666666;
+}
+.design_title .decoration{
+    color:#666666;
+    font-size:14px;
+    text-shadow:0 3px 3px #666;
+}
+.team_name{
+    /* float:right;*/
+   /* margin-bottom:309px;*/
+}
+.team_name ul li{
+    width:65%;
+    /* background:red;*/
+    margin-left:35%;
+    /* background:red;*/
+    text-align: left;
+}
+.team_name ul li a{
+    display: block;
+    color:#fdfdfd;
+    font-size:20px;
+    padding:10px 0;
+}
+.company_information{
+   /* width: 80%;*/
+    margin: 0 auto 20px;
+    /* background: red; */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left:2%;
+}
+.company_information .wei{
+    float:left;
+    margin-right:10px;
+    /* margin-left:20px;*/
+}
+.company_information .wei img{
+    width:100%;
+    margin-top:5px;
+}
+.company_information .company_name{
+    float:left;
+    font-size:14px;
+    color:#fff;
+    line-height:24px;
+}
+/*右侧导航*/
+.right_list .nav .nav_active{
+    background:#303030;
+}
+.right_list{
+    float: left;
+    width: 85%;
+    /* background: yellowgreen; */
+    padding-left: 15%;
+    /* position: fixed; */
+}
+
+.right_list .line{
+    height: 22px;
+    background: #4a4a4a;
+    border-bottom: solid 2px #787878;
+    border-left: solid 1px #a3a3a3;
+    position: fixed;
+    z-index: 10000;
+    width: 85%;
+    /* margin-bottom: 22px; */
+}
+.right_list .nav{
+    width: 85%;;
+    position: fixed;
+    z-index: 10000;
+    margin-top: 22px;
+}
+.member_list{
+    padding-top: 165px;
+}
+.right_list .nav ul li{
+    border:1px solid #a3a3a3;
+    float:left;
+    width:12.5%;
+    height:70px;
+    line-height:70px;
+    text-align:center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background:#6b6b6b;
+}
+.right_list .nav ul li a{
+    font-size:22px;
+    color:#fff;
+}
+/*左侧栏目鼠标划过时添加的类*/
+.team_name ul .team_active{
+    width:65%;
+    background:#323232;
+}
+/*媒体查询*/
+@media only screen and (min-width:1680px){
+    .design_title{
+        margin-bottom:136px;
+    }
+}
+/*设置标题*/
+@media only screen and (max-width:1680px){
+    .login{
+        right:160px;
+    }
+    header .logo{
+        margin-left:111px;
+    }
+    .title{
+        margin-right:277px;
+    }
+}
+@media only screen and (max-width:1620px){
+    .login{
+        right:120px;
+    }
+    header .logo{
+        margin-left:111px;
+    }
+    .title{
+        margin-right:277px;
+    }
+}
+@media only screen and (max-width:1460px) {
+    .company_information {
+       left:1%;
+    }
+    .company_information .wei {
+        margin-right: 6px;
+    }
+    .login {
+        right: 45px;
+    }
+    header .logo {
+        margin-left: 188px;
+    }
+    .title{
+        margin-right:202px;
+    }
+}
+@media only screen and (max-width:1366px) {
+   /* .company_information {
+        width: 100%;
+    }*/
+    .company_information{
+        left:0.5%;
+    }
+    .company_information .wei {
+        float: left;
+        margin-right: 5px;
+    }
+    .title {
+        margin-right: 118px;
+    }
+    header .logo{
+        margin-left:212px;
+    }
+    .login{
+        right:70px;
+    }
+    header .top{
+        width:100%;
+    }
+}
+@media only screen and (max-width:1300px) {
+    .company_information .company_name {
+        font-size: 12px;
+    }
+    .addre_tel {
+        font-size: 16px;
+    }
+    .title p:last-child, .addre p {
+        font-size: 16px;
+    }
+}
+

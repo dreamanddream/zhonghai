@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <title>Title</title>
+         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/willesPlay.css"/>
+         <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+         <script src="js/index.js"></script>
+         <script src="js/willesPlay.js" type="text/javascript" charset="utf-8"></script>
+         <style>
+        *{
+            padding: 0;margin: 0;
+            }
+        .container_lun {
+            /* margin: 20px auto; */
+            /* width: 510px; */
+            width:100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .row{
+                margin-right: 0;
+                margin-left: 0;
+        }
+        .inner {
+            position: relative;
+            /* width: 9999px;*/
+            /* width:8100px; */
+            width:900%;
+            left: 0;
+            top: 0;
+            height:100%;
+        }
+        .innerwraper {
+            /* width: 100%; */
+            float: left;
+            height:100%;
+        }
+        .clearfix {
+            *zoom: 1;
+        }
+        .clearfix:after {
+            display: block;
+            clear: both;
+            visibility: hidden;
+            content: "";
+            height: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        .left-arrow {
+            position: absolute;
+            left: 0;
+            top: 40%;
+            width: 10%;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 20px;
+        }
+        .right-arrow {
+            position: absolute;
+            right: 0;
+            top: 40%;
+            width: 10%;
+            height: 20px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 20px;
+        }
+        .innerwraper img{
+            width: 100%;
+            height:100%;
+        }
+        .pagination{
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            left: 0;
+        }
+        .pagination span{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            line-height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .playControll{
+            left: 50%;
+            bottom:-10px !important;
+        }
+        .pagination .active{
+            background-color: red;
+            color: #FFFFFF;
+        }
+        header{
+            height:15%;
+             position:static; 
+        }
+        .title p:first-child {
+            font-size: 30px;
+            color: #000;
+            font-weight: bold;
+        }
+        .addre p:last-child {
+            margin-top: 0px;
+            margin-left: 53px;
+        }
+        p{ 
+            margin: 0 0 0px;
+        }
+        .content{
+            height:70%;
+            padding-top:0;
+        }
+       
+        nav{
+            height:15%;
+            margin-top:0;
+            /* margin-top:3%; */
+        }
+        nav ul li{
+            height:36px;
+            line-height:36px;
+        }
+        @media only screen and (max-width: 1500px){
+            .addre_tel p:last-child {
+                    margin-top: 0px;
+        }
+    }
+     .content_inner,.weizhi,.row,.wei{
+            height:100%;
+        }
+        #willesPlay{
+            height:90%;
+        }
+         #willesPlay .playContent{
+            height:100%;
+            text-align:center;
+            background: url(./images/dahai.jpg) no-repeat left center;
+        }
+        #playVideo{
+            height:100%;
+            margin: 0 auto;
+        }
+        .container_lun{
+            height:100%;
+        }
+         </style>
+       
+       
+        
+       
+    </head>
+<body>
+<header>
+    <div class="top w clearfix">
+        <div class="logo fl">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        <div class="title fl">
+            <p>中海建林</p>
+            <p>（北京）装饰工程有限责任公司</p>
+        </div>
+        <div class="address fl">
+            <div class="addre fl">
+                <p>地址：北京市朝阳区十里河御景园部</p>
+                <p>北京市朝阳区亚运村天创世缘部</p>
+            </div>
+            <div class="fl img">
+                <img src="images/logo_tel.jpg" alt="">
+            </div>
+            <div class="addre_tel fl">
+                <p>010-64809081</p>
+                <p>010-64809081</p>
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <a href="">登录</a><span>/</span><a href="">注册</a>
+    </div>
+</header>
+<div class="content">
+    <div class="content_inner clearfix">
+        <!-- <div class="dingwei clearfix">
+            <div class="m" id="videoBox">
+                <video id="video1" controls autoplay>
+                    <source src="d1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="dingwei_img clearfix"><img src="images/banner_title.jpg" class="img" alt=""></div>
+        </div> -->
+        <div class="weizhi">
+    <div class="row">
+        <div class="wei">
+            <div id="willesPlay">
+                <div class="container_lun" style="display: none;">
+                    <div class="inner clearfix">
+                        <div class="innerwraper"><img src="images/quality_ten.jpg" alt="" /></div>
+                        <div class="innerwraper"><img src="images/quality_one.jpg" alt="" /></div>
+                        <div class="innerwraper"><img src="images/quality_two.jpg" alt="" /></div>
+                        <div class="innerwraper"><img src="images/quality_three.jpg" alt="" /></div>
+                        <div class="innerwraper"><img src="images/quality_four.jpg" alt="" /></div>
+                        <div class="innerwraper"><img src="images/quality_six.jpg" alt="" /></div>
+                        <div class="innerwraper"><img src="images/quality_seven.jpg"  alt="" /></div>
+                        <div class="innerwraper"><img src="images/quality_eight.jpg"  alt="" /></div>
+                        <div class="innerwraper"><img src="images/quality_nine.jpg" alt="" /></div>
+                    </div>
+                    <div class="pagination">
+                        <span class="active">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                    </div>
+                </div>
+                <div class="playContent">
+                    <video id="playVideo" src="d1.mp4" autoplay="autoplay">
+                        当前浏览器不支持 video直接播放，点击这里下载视频： <a href="/">下载视频</a>
+                    </video>
+                </div>
+                <div class="playControll">
+                <div class="playPause playIcon"></div>
+        <div class="timebar">
+            <span class="currentTime">0:00:00</span>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                </div>
+            <span class="duration">0:00:00</span>
+        </div>
+        <div class="otherControl">
+            <span class="volume glyphicon glyphicon-volume-down"></span>
+            <span class="fullScreen glyphicon glyphicon-fullscreen"></span>
+            <div class="volumeBar">
+                    <div class="volumewrap">
+                        <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 8px;height: 40%;"></div>
+                    </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+</div>
+            
+ </div>
+     </div>
+ </div>
+     </div>
+ </div>
+<nav>
+    <div class="nav_inner w">
+    <ul class="clearfix nav_ul">
+        <li id="index"><a href="index.html">首&nbsp;&nbsp;页</a></li>
+        <li class="nav_active" id="company"><a href="company_introduction.html">公司简介</a></li>
+        <li id="fitment_notice"><a href="fitment_notice.html">装修榜</a></li>
+        <li id="design"><a href="design_teams.html">设计团队</a></li>
+        <li id="quality"><a href="quality_design.html">品质设计</a></li>
+        <li id="materials"><a href="materials.html">主材介绍</a></li>
+        <li id="owner"><a href="owner_comment.html">业主点评</a></li>
+        <li id="consult" class="line_none"><a href="consult.html">在线咨询</a></li>
+        <li id="news" class="line_border"><a href="news_dynamic.html">新闻动态</a></li>
+        <li id="manager" class="line_border"><a href="manager_patrol.html">高管巡查</a></li>
+        <li id="fitment_guide" class="line_border"><a href="fitment_guide.html">装修指南</a></li>
+        <li id="special" class="line_border"><a href="special_activity.html">优惠活动</a></li>
+        <li id="recruit" class="line_border"><a href="recruit.html">招贤纳士</a></li>
+        <li id="ingredients" class="line_border"><a href="ingredients_introduction.html">辅料介绍</a></li>
+        <li id="employee" class="line_border"><a href="employee_family.html">员工之家</a></li>
+        <li id="fitment_order" class="line_none line_border"><a href="fitment_order.html">装修预约</a></li>
+    </ul>
+    </div>
+</nav>
+<script>
+   /*视频暂停后，图片轮播*/
+    var playVideo=$("#playVideo");
+    alert(playVideo.width());
+    $(".playControll").css({"width":playVideo.width()-100,"margin-left":-1/2*(playVideo.width()-100)})
+        var innerGroup = $(".innerwraper");
+        var leftArrow = $(".left-arrow");
+        var rightArrow = $(".right-arrow");
+        var spanGroup = $(".pagination span");
+        var _index = 0;
+        var timer = null;
+        var flag = true;
+        var playVideo=$("#playVideo");
+        var playContent =$(".playContent");
+        var playControll=$(".playControll");
+        var playPause=$(".playPause");
+        var container_lun=$(".container_lun");
+        /*var lunbo=1;*/
+        $(".innerwraper").css("width",$(window).width())
+        var imgWidth = $(".innerwraper img:first-child").eq(0).width();
+        console.log(imgWidth)
+       
+        $(".container_lun").hover(function() {
+            //鼠标移入
+            clearInterval(timer);
+            flag = false;
+        }, function() {
+            flag = true;
+            timer = setInterval(go, 3000);
+        });
+    autoGo(flag);
+        function autoGo(bol) {
+            clearInterval(timer);
+            //自动行走
+            if (bol) {
+                timer = setInterval(go, 3000);
+            }
+        }
+        
+    $(".container_lun").on("click",function () {
+            $(".container_lun").css("display","none");
+            clearInterval(timer);
+            /*lunbo=1;*/
+            playContent.css("display","block");
+            playVideo.css("display","block");
+            playControll.css("display","block");
+            playVideo.get(0).play();
+            playPause.toggleClass('playIcon');
+        })
+        function go() {
+            //计时器的函数
+            _index++;
+            selectPic(_index);
+            if($(".container_lun").css("display")=="none"){
+                
+            }
+        }
+        function selectPic(num) {
+            $(".pagination span").eq(num).addClass("active").siblings().removeClass("active");
+            /*alert(imgWidth);*/
+                console.log( $(window).width());
+            $(".inner").animate({
+
+                /**/ left: -num *$(window).width(),
+            }, 1000, function() {
+                //检查是否到最后一张
+                if (_index == innerGroup.length - 1) {
+                    _index %= 8;
+                    console.log(_index);
+                    $(".inner").css("left", "0px");
+                    $(".pagination span").eq(0).addClass("active").siblings().removeClass("active");
+                }
+            })
+        }
+</script>
+</body>
+</html>
+

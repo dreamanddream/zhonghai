@@ -1,0 +1,135 @@
+/*优惠活动标题*/
+.special_title{
+    background: #ececec;
+    padding-top:160px;
+}
+.special_title p{
+    font-size:40px;
+    color:#5a5a5a;
+    padding:18px 0 13px 18px;
+}
+.special_line{
+    background:#23211c;
+    height:4px;
+}
+/*优惠活动内容*/
+.special_content{
+    margin-top:40px;
+    margin-left:40px;
+   /* width:100%;*/
+}
+.special_list{
+    min-height:300px;
+    border-bottom:1px solid #f5f5f5;
+   /* border:solid 1px yellow;*/
+    margin-bottom:30px;
+}
+.special_list .special_left{
+    width:25%;
+    float:left;
+}
+.special_left .special_images{
+  /*  margin-bottom:58px;*/
+}
+.special_left .special_images img{
+    width:100%;
+}
+.special_left .activity_time{
+    margin-bottom:25px;
+}
+.special_left .activity_time .activity_start{
+    width:100%;
+    font-size:20px;
+    color:#fff;
+    background:#ff343f;
+    text-align:center;
+    padding:10px 0;
+   /* padding:3% 19% 3% 35%*/
+}
+.special_left .activity_time .activity_stop{
+    width:100%;
+    font-size:20px;
+    color:#fff;
+    background:#939393;
+    text-align:center;
+    padding:10px 0;
+    display:none;
+}
+.special_left .activity_time span:first-child{
+    width:20px;
+    height: 20px;
+    background: url("../images/__sprite.png") 29px 0px;
+    display:inline-block;
+}
+/*活动内容右侧*/
+.special_right{
+    margin-left:20px;
+    float:left;
+    width:65%;
+
+}
+.special_top{
+    /*float:left;*/
+    margin-left:20px;
+}
+.special_bottom{
+    margin-left:20px;
+}
+.special_top .specialTitle{
+    font-size: 26px;
+    color:#474747;
+    margin-bottom:36px;
+}
+.special_top .specialXiangqing{
+    font-size:14px;
+    color:#6c6c6c;
+    margin-bottom:67px;
+}
+.activity{
+    float:left;
+}
+.activity .first_activity{
+    font-size:20px;
+    color:#939393;
+}
+.activity p{
+    margin-bottom:10px;
+}
+.activity .activity_address{
+    font-size:14px;
+}
+.activity .activity_date{
+    font-size:20px;
+}
+.activity .activity_tel{
+    color:#ff343f;
+    font-size:22px;
+    font-weight: bold;
+}
+.consult_xiangqing{
+    float:left;
+    margin-left:20%;
+    font-size:16px;
+    margin-top:26px;
+}
+.consult_xiangqing .online{
+    float:left;
+    border:1px solid #ff343f;
+    color:#ff343f;
+    padding:14px 40px;
+    margin-right:12px;
+
+}
+.consult_xiangqing .search{
+    float:left;
+    color:#fe9b29;
+    border:solid 1px #fe9b29;
+    padding:14px 20px;
+}
+/*媒体查询*/
+@media only screen and (max-width:1366px) {
+    .consult_xiangqing{
+        margin-left:10%;
+    }
+}
+

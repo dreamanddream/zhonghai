@@ -1,0 +1,165 @@
+/*红榜内容*/
+.big_fitment{
+    padding-top:175px;
+}
+.big_fitment .red_img{
+    width:30%;
+    margin:0 auto;
+}
+.big_fitment .red_img img{
+    width:100%;
+}
+.season_content{
+    display:flex;
+    text-align: center;
+    margin-top: 15px;
+}
+.season_content p{
+    font-size:32px;
+    flex: 1;
+    cursor: pointer;
+}
+.season_content .one{
+    background: #94f062;
+}
+.season_content .two{
+background: #00a53e;
+}
+.season_content .three{
+    background: #ffca29;
+}
+.season_content .four{
+    background: #36d2ff;
+}
+.big_fitment .red_content{
+    display:flex;
+}
+.red_content .member_content{
+    flex:1;
+    margin: 2% 1%;
+}
+.red_content .member_img{
+    display: block;
+    -webkit-box-shadow: 8px 7px 7px #6b6b6b;
+    -moz-box-shadow: 8px 7px 7px #6b6b6b;
+    box-shadow: 8px 7px 7px #6b6b6b;
+}
+.red_content .member_img img{
+    width:100%;
+}
+.red_content .introduce{
+    background: #8a8a8a;
+    color:#fff;
+    font-size:14px;
+    margin-top: 24px;
+    padding:25px 15px;
+    line-height:26px;
+}
+/*.notice_content .big_red .red_show{
+    display:block;
+}*/
+/*.big_red .red_content:first-child{
+    display:block;
+}*/
+/*.big_red .red_content{
+  display: none;
+}*/
+
+.notice_hide{
+    display:none;
+}
+/*黑榜标题*/
+.fitment_title{
+    text-align:center;
+    margin:30px 0 90px 0;
+    /*padding-top: 133px;*/
+}
+.fitment_title .black_img{
+    width:30%;
+    margin:0 auto;
+}
+.fitment_title .black_img img{
+    width:100%;
+}
+.blackFont{
+    background:red;
+    position:relative;
+    font-size:24px;
+    margin-bottom:70px;
+}
+.blackLine{
+   /* float:left;*/
+    width:90px;
+    height:1px;
+    border-bottom:1px dashed #000;
+    position:absolute;
+    top: 16px;
+    left: 65%;
+}
+.blackNotice{
+   /* float:left;*/
+    position:absolute;
+    left:73%;
+}
+ .font_introduction{
+     margin:0 auto;
+     width:50%;
+     text-align: left;
+     font-size:20px;
+     color:#222;
+     line-height:40px;
+}
+ /*黑榜内容*/
+.fitment_content{
+    margin-bottom:15px;
+}
+ .blackImages{
+     margin-left: 4%;
+     width:30%;
+     float:left;
+ }
+ .blackImages img{
+     width:100%;
+ }
+ .font_content{
+     padding-top:80px;
+     width:60%;
+     float:left;
+     margin-left:5%;
+     font-size: 14px;
+     vertical-align: middle;
+     display:table-cell;
+     /*margin-top:80px;*/
+     line-height:26px;
+ }
+
+ /*媒体查询*/
+/*耻辱榜字体调整*/
+@media only screen and (max-width:1920px){
+    .blackNotice {
+        left: 70%;
+    }
+    .red_title .redNotice{
+        left:70%;
+    }
+}
+@media only screen and (max-width:1600px){
+    .blackNotice {
+        left: 72%;
+    }
+    .red_title .redNotice{
+        left:72%;
+    }
+}
+@media only screen and (max-width:1280px) {
+    .blackLine,.redLine {
+        width: 75px;
+    }
+
+}
+/*图片右侧文字*/
+@media only screen and (max-width:1440px) {
+    .font_content{
+        padding-top:50px;
+    }
+}

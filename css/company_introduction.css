@@ -1,0 +1,205 @@
+/*html{font-size:62.5%;}*/
+.bigCompany{
+    padding-top: 161px;
+}
+.font_bref{
+    margin:80px 0 40px 200px;
+}
+.font_bref .company_title{
+    font-size:38px;
+   margin-bottom:45px;
+    text-align: center;
+   /* font-weight:bold;*/
+}
+.font_bref p:not(.company_title){
+    font-size:20px;
+    line-height:38px;
+}
+
+/*时间轴*/
+.time_line_box{
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+}
+/*时间轴上的线*/
+.time_line{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 49px;
+    height: 2px;
+    background: #c1c1c1;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+.order_item{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 15px;
+    color: #c1c1c1;
+}
+.order_item:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #d7d7d7;
+    background-color: #c1c1c1;
+}
+.selected:after{
+    bottom: -22px;
+    width:34px;
+    height:34px;
+}
+.filling_line{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #c1c1c1;
+    transform-origin: left center;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}
+.time_tip{
+    width: 100%;
+    height: 100px;
+    line-height: 70px;
+    text-align: center;
+    color: #151BFD;
+    border-bottom: 1px solid #ddd;
+}
+/*荣誉榜内容*/
+/*.honor_collect .honor_list{
+    background: #c4c4c4;
+    width:100%;
+}
+.honor_list .honor_video{
+    width:60%;
+    float:left;
+    margin-right:70px;
+}
+.honor_video .honorVideo{
+    width:100%;
+}
+.bref_honor p{
+    padding-top:50px;
+    font-size:20px;
+}
+
+.company_honor{
+    display:none;
+}
+.honor_collect .honorShow{
+    display:block;
+}
+.honor_list{
+    display:none;
+}*/
+.company_honor{
+   /* width:90%;*/
+   /* margin-left:2%;*/
+    display:none;
+}
+.bigCompany .honor_show{
+    display:block;
+}
+.company_honor .honor_item .shuoming{
+    font-size:18px;
+    color:#000;
+    display:block;
+    margin:27px 0 20px;
+}
+.company_honor .item_collection {
+   /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;*/
+  /*  display:flex;*/
+
+}
+.company_honor .honor_item{
+  /*  width:28%;*/
+     margin:1%;
+    width:23%;
+    float:left;
+}
+.company_honor .honor_item .honorImages img{
+    width:100%;
+}
+.company_honor .honor_item .read_all{
+    width:90px;
+    height:22px;
+    border:1px solid #978d79;
+    display:inline-block;
+    text-align:center;
+    line-height:22px;
+    font-size:14px;
+}
+.company_honor .honor_item .read_all .sanjiao{
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #978d79;
+    border-bottom: 5px solid transparent;
+    display:inline-block;
+    margin-left:10px;
+}
+.company_honor .getMore a{
+    background:#f8f8f8;
+    text-align: center;
+    font-size:14px;
+    display: block;
+    height:48px;
+    line-height:48px;
+    margin-top:50px;
+    color:#999;
+}
+/*媒体查询*/
+@media only screen and (max-width:1600px) {
+    .font_bref {
+        margin-left: 7%;
+    }
+}
+@media only screen and (max-width:1460px){
+    .font_bref p:not(.company_title) {
+        line-height: 32px;
+        font-size: 16px;
+    }
+    .font_bref {
+        margin-left: 6%;
+    }
+    .company_honor .honor_item .shuoming {
+        font-size: 16px;
+    }
+    .company_honor .honor_item{
+        /*  width:28%;*/
+        margin:1%;
+        width:31.3%;
+        float:left;
+    }
+}
+@media only screen and (max-width:1376px) {
+    .font_bref p:not(.company_title) {
+        line-height: 32px;
+        font-size: 16px;
+    }
+    .font_bref {
+        margin-left: 6%;
+    }
+}
+
+
